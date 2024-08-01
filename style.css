@@ -1,0 +1,283 @@
+:root {
+    --main-color1: #3500d3;
+    --main-color2: #3500d3;
+    --main-color3: #3500d3;
+    --header-color1:#3500d3;
+    --header-color2:#3500d3;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 80px) {
+    html {
+      font-size: 12.5px;
+    }
+    .my {
+      font-size: 0;
+    }
+    .work-caption {
+      font-size: 1.25em;
+    }
+    .footer-logo {
+      width: 15px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    html {
+      font-size: 15px;
+    }
+    .footer-logo {
+      width: 35px;
+    }
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: Didot, sans-serif
+    scroll-behavior smooth;
+  }
+  
+  header {
+    background-color:
+    (--header-color1);
+    border-bottom: 5px solid var(--header-color2);
+    width: 175%;
+    height: 22px;
+    padding: 17px 0 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 2;
+    left: 0;
+    width: 58%;
+    padding: 15px;
+  }
+  
+  #navbar, #navbar > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #navbar > ul > li {
+    font-size: 1.25em;
+    display: block;
+    padding: 0 20px 0 20px;
+    color: ghostwhite;
+  }
+  
+  a {
+    text-decoration: none;
+    color: ghostwhite;
+  }
+  
+  li:hover {
+    background-color: ghostwhite;
+    cursor: pointer;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    position: relative;
+  }
+  
+  #welcome-section {
+    background-color: var(--main-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .border-big {
+    margin: 0 auto;
+    border: 1px solid ghostwhite;
+    width: 65vw;
+  }
+  
+  .border-small {
+    margin: 0 auto;
+    border: 1px solid ghostwhite;
+    width: 45vw;
+  }
+  
+  .border-huge {
+    margin: 0 auto;
+    border: 3px solid var(--header-color2);
+    width: 100%;
+  }
+  
+  .welcome-text {
+    text-align: center;
+    color: ghostwhite;
+  }
+  
+  .main-title {
+    font-size: 4.5em;
+    font-weight: bold;
+  }
+  
+  .main-caption {
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  
+  #projects {
+    background-color: var(--main-color2);
+  }
+  
+  .projects-title, .dream-title {
+    text-align: center;
+    font-size: 2.25em;
+    color: ghostwhite;
+    padding: 65px 0 10px 0;
+  }
+  
+  .work-grid {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .project-tile {
+    background-color: var(--header-color1);
+    border: 4px solid var(--header-color2);
+  }
+  
+  .project-tile:hover {
+    transform: scale(0.98);
+    border: 4px solid var(--main-color3);
+    cursor: pointer;
+  }
+  
+  .work-img {
+    border-bottom: 4px solid var(--header-color2);
+  }
+  
+  @media (min-width: 1100px) {
+    .work-img {
+      width: 500px;
+    }
+    .project-tile {
+      width: 500px;
+    }
+    .work-caption {
+      font-size: 1.25em;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .work-img {
+      width: 330px;
+    }
+    .project-tile {
+      width: 330px;
+    }
+  }
+  
+  .work-caption {
+    color: ghostwhite;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #dream-contact {
+    background-color: var(--main-color3);
+    height: 90vh;
+  }
+  
+  .dream-caption {
+    text-align: center;
+    font-size: 1.1em;
+    margin: auto;
+    padding: 40px;
+    width: 60%;
+    color: ghostwhite;
+  }
+  
+  .contacts {
+    text-align: center;
+    padding: 5px 0 0 0;
+  }
+  
+  .contact-logo {
+    position: relative;
+    padding: 0 20px 10px 20px;
+  }
+  
+  .contact-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 860px) {
+    .contact-logo {
+      width: 200px;
+    }
+    #freeCodeCamp-logo {
+      top: 15px;
+    }
+  }
+  
+  @media (min-width: 860px) {
+    .contact-logo {
+      width: 380px;
+    }
+    #freeCodeCamp-logo {
+      top: 30px;
+    }
+  }
+  
+  
+  
+  footer {
+    background-color: var(--header-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .footer-title {
+    text-align: center;
+    color: #3500d3;
+    width: 50%;
+    font-size: 0.9em;
+  }
+  
+  .GeneratedMarquee {
+  font-family:Helvetica, sans-serif;
+  font-size:2em;
+  font-variant:small-caps;
+  line-height:1.3em;
+  color:#FFFFFF;
+  padding:1.5em;
+  
+  }
+  
+  .site-footer {
+    background: orange;
+  }
+  
+  #footer-content {
+    background: red;
+  }
+  
+  
+  
+  
